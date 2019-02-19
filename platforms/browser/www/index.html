@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="framework7/css/framework7.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+
+    <style>
+        .media-list {
+          overflow: scroll;
+        }
+
+        .demo-card-header-pic .card-header {
+		  height: 40vw;
+		  background-size: cover;
+		  background-position: center;
+		  color: #fff;
+		}
+		.demo-card-header-pic .card-content-padding .date{
+		  color: #8e8e93;
+		}
+
+
+         .demo-swiper .swiper-slide {
+              font-size: 25px;
+              font-weight: 300;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background: #fff;
+              color: #000;
+            }
+
+        .demo-swiper .swiper-slide {
+              box-sizing: border-box;
+              border: 1px solid #ddd;
+              background: #fff;
+            }
+        .demo-swiper {
+          margin: 0px 0 35px;
+          font-size: 18px;
+          height: 450px;
+        }
+        .demo-swiper.demo-swiper-auto .swiper-slide {
+          width: 85%;
+        }
+        .demo-swiper.demo-swiper-auto .swiper-slide:nth-child(2n) {
+          width: 70%;
+        }
+        .demo-swiper.demo-swiper-auto .swiper-slide:nth-child(3n) {
+          width: 30%;
+        }
+
+    </style>
+  </head>
+  <body>
+    <!-- App root element -->
+    <div id="app">
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
+
+          <!-- Top Navbar -->
+         <!--  <div class="navbar">
+            <div class="navbar-inner" style="background-color:#ffc0cb">
+              <div class="title">Schadenfruede</div>
+
+	          </div>
+	      </div> -->
+        <!--last of </div> -->
+
+        <!-- start of fab buttons -->
+        	<img data-src="images/first.png" class="lazy lazy-fade-in" width="100%" height="100%">
+
+  <div class="fab fab-right-bottom color-pink" style="position: absolute; bottom: 50px;">
+    <a href="#">
+      <!-- Icons For iOS Theme -->
+      <i class="icon f7-icons ios-only">+</i>
+      <i class="icon f7-icons ios-only">-</i>
+      <!-- Icons For MD Theme -->
+      <i class="icon material-icons md-only">+</i>	
+      <i class="icon material-icons md-only">-</i>
+    </a>
+
+    <!-- FAB speed dial actions with labels -->
+    <div class="fab-buttons fab-buttons-top">
+
+	  <div class="fab fab-morph color-pink" data-morph-to=".huhu">
+	      <a href="#" class="fab-label-button">
+	        <span>1</span>
+	        <span class="fab-label">Meals</span>
+	      </a>
+		</div>
+
+
+
+	  <div class="fab fab-morph color-pink" data-morph-to=".hello" style="position: absolute; bottom: 55px;">
+	      <a href="#" class="fab-label-button">
+	        <span>2</span>
+	        <span class="fab-label">Theme</span>
+	      </a>
+	  </div>
+
+    <div class="fab fab-morph color-pink" data-morph-to=".bye" style="position: absoute; bottom: 110px;" >
+      <a href="#" class="fab-label-button">
+        <span>3</span>
+        <span class="fab-label">Program</span>
+      </a>
+  </div>
+
+
+	    <div class="fab fab-morph color-pink" data-morph-to=".wew" style="position: absoute; bottom: 160px;" >
+	      <a href="#" class="fab-label-button">
+	        <span>4</span>
+	        <span class="fab-label">Entourage</span>
+	      </a>
+    </div>
+    
+  
+
+     <div class="fab fab-morph color-pink" data-morph-to=".dev" style="position: absoute; bottom: 210px;" >
+        <a href="#" class="fab-label-button">
+          <span>5</span>
+          <span class="fab-label">Developer's Page</span>
+        </a>
+    </div>
+  
+    
+<!-- 
+    <div class="fab fab-morph color-blue" data-morph-to=".huhu" style="position: absoute; bottom: 110px;" >
+      <a href="#" class="fab-label-button">
+        <span>3</span>
+        <span class="fab-label">Meals</span>
+      </a>
+  </div> -->
+
+
+
+<!-- 	    <div class="fab fab-morph color-blue" data-morph-to=".toolbar" style="position: absolute; bottom: 60px;">
+	      <a href="#" class="fab-label-button">
+	        <span>4</span>
+	        <span class="fab-label">Action 4</span>
+	      </a>
+	  </div> -->
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+			     <!--  <a href="/entourage/"><img data-src="images/people.jpg" class="lazy lazy-fade-in" width="130%" height="150%"></a>
+			      <a href="/event/"><img data-src="images/event.png" class="lazy lazy-fade-in" width="100%" height="100%"></a>
+			      <a href="/meals/"><img data-src="images/cake.png" class="lazy lazy-fade-in" width="100%" height="100%"></a>
+			      <a href="/clothes/"><img data-src="images/dress.png" class="lazy lazy-fade-in" width="100%" height="100%"></a>
+ -->
+ 
+		<!--end of fab buttons-->
+			
+
+       <!--  </div> -->
+       			</div>
+
+<!-- Toolbar FAB Morph Target -->
+
+
+
+
+
+
+<!-- Entourage -->
+
+  <div class="wew toolbar toolbar-bottom-md fab-morph-target">
+    <div class="toolbar-inner" style="background-color:#FFC0CB">
+    
+
+    <a href= "/entourage-roses/"  style="color:rgb(0, 0, 0)">Roses</a>
+    <a href= "/entourage-candles/" style="color:rgb(0, 0, 0)">Candles</a>
+    <a href= "/entourage-treasures/" style="color:rgb(0, 0, 0)"> Treasures</a>
+    <a href= "/entourage-bills/" style="color:rgb(0, 0, 0)">Blue Bills</a>
+
+
+    </div>
+  </div>
+
+
+ 
+
+
+<!-- end of Entourage -->
+
+
+
+
+
+
+<!-- Event Proper -->
+
+
+
+    <div class="bye toolbar toolbar-bottom-md fab-morph-target">
+    <div class="toolbar-inner" style="background-color:#FFC0CB
+    ">
+      <!-- Each Toolbar link will close FAB (morph back) on click -->
+      <a href= "/about/" style="color:rgb(0, 0, 0)">About</a>
+     <a href= "/location/" style="color:rgb(0, 0, 0)">Location</a>
+       <a href= "/timeline/" style="color:rgb(0, 0, 0)">Timeline</a>
+    </div>
+  </div>
+
+
+
+ <!--End of Event Proper -->
+
+
+
+
+
+
+
+
+<!-- Meals -->
+  <div class="huhu toolbar toolbar-bottom-md fab-morph-target">
+    <div class="toolbar-inner" style="background-color:#FFC0CB">
+      <!-- Each Toolbar link will close FAB (morph back) on click -->
+        <a href= "/meals-appetizer/" style="color:rgb(0, 0, 0)">Appetizer</a>
+    	<a href= "/meals-mc/" style="color:rgb(0, 0, 0)">Main Course</a>
+        <a href= "/meals-dessert/" style="color:rgb(0, 0, 0)">Dessert</a>
+    </div>
+  </div>
+
+
+
+<!-- end of Meals -->
+
+
+<!-- Clothes -->
+
+  <div class="hello toolbar toolbar-bottom-md fab-morph-target ">
+    <div class="toolbar-inner" style="background-color:#FFC0CB">
+      <!-- Each Toolbar link will close FAB (morph back) on click -->
+      <a href= "/clothes/" style="color:rgb(0, 0, 0)">Women</a>
+       <a href= "/Clothes-theme/" style="color:rgb(0, 0, 0)">Attire</a>
+     <a href= "/clothes-men/" style="color:rgb(0, 0, 0)">Men</a>
+    </div>
+  </div>
+
+<!-- Dev Page -->
+
+  <div class="dev toolbar toolbar-bottom-md fab-morph-target ">
+    <div class="toolbar-inner" style="background-color:#FFC0CB">
+      <!-- Each Toolbar link will close FAB (morph back) on click -->
+      <a href= "/developer/" style="color:rgb(0, 0, 0)">Gomez</a>
+       <a href= "/developer1/" style="color:rgb(0, 0, 0)">Lascuña</a>
+     <a href= "/developer2/" style="color:rgb(0, 0, 0)">Ybiernas</a>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+			<!-- 	<script>
+
+				    var swiper = app.swiper.get('.swiper-container');
+
+				        swiper.slideNext();
+
+				</script>
+ -->
+
+<!-- end of clothes -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--- end of </div> -->
+		      </div>
+		    </div>
+
+
+		     
+
+
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="framework7/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>
